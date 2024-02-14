@@ -35,6 +35,7 @@ You can download the latest version of Python [here](https://www.python.org/down
 * [datetime](https://docs.python.org/3/library/datetime.html) (install via "pip install datetime") 
 
 **Data:**
+
 The following files are already in the current repository under "/data/". 
 It is recommended that you use them. However, the current data can also be obtained as follows:
 
@@ -49,20 +50,22 @@ It is recommended that you use them. However, the current data can also be obtai
 ## Installation
 
 **How To:**<br>
-The easiest way to use this app is to download the following files:
+The easiest way to use this app is to download the complete repository.
+The data can be downloaded separately as described above. However, the following data must be downloaded:
 
 /main.py
+/assets/header_bg.png
+/config/config.yaml
+/data/content.yaml
+/utils/__init__.py
+/utils/dash_processing.py
+/utils/data_loading.py
+/utils/data_processing.py
 
-arXiv Dataset: https://www.kaggle.com/datasets/Cornell-University/arxiv
 
 ## Usage / How to
 
-You only have to run main.py. Make sure you have downloaded the arXiv Dataset.
-There are a few parameters set in the code. Feel free to change those - for example the filter criteria for the time period or the stop-words.
-
-The validation of KMeans (Elbow method) and LDA (coherence score) are commented out in the code presented here.
-
-Once the code is running, it takes a lot of time due to the complex calculations of multiple models. 
+You only have to run main.py. Make sure that you have downloaded the required data - either via this repository or the links provided here.
 
 ## Contributing 
 With reference to the fact that this app was created in the course of my studies and I am therefore in a constant learning process, I am happy to receive any feedback.
