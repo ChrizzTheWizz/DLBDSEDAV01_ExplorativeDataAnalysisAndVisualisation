@@ -34,6 +34,17 @@ You can download the latest version of Python [here](https://www.python.org/down
 * [netCDF4](https://unidata.github.io/netcdf4-python/) (install via "pip install netCDF4")
 * [datetime](https://docs.python.org/3/library/datetime.html) (install via "pip install datetime") 
 
+**Data:**
+The following files are already in the current repository under "/data/". 
+It is recommended that you use them. However, the current data can also be obtained as follows:
+
+* [GISS Surface Temperature Analysis (GISTEMP v4)](https://data.giss.nasa.gov/pub/gistemp/gistemp1200_GHCNv4_ERSSTv5.nc.gz)
+* [CO2 and Greenhouse Gas Emissions](https://github.com/owid/co2-data/blob/master/owid-co2-data.csv)
+* [CO2 and Greenhouse Gas Emissions Codebook](https://github.com/owid/co2-data/blob/master/owid-co2-codebook.csv)
+* [Country shapes (geo data)](https://datahub.io/core/geo-countries/r/countries.geojson)
+* [Country to Continent Mapping](https://gist.github.com/stevewithington/20a69c0b6d2ff846ea5d35e5fc47f26c)
+* [World Bank Country and Lending Groups](https://datacatalogfiles.worldbank.org/ddh-published/0037712/DR0090755/CLASS.xlsx)
+
 
 ## Installation
 
