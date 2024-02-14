@@ -1,0 +1,116 @@
+general:
+  column_description:
+    'Column Description:'
+
+00_header:
+  title:
+    'CLIMATE CRISIS - A DATA BASED EXPLORATIVE ANALYSIS'
+  subtitle:
+    'The global development of temperature anomalies and CO₂ emissions despite international agreements'
+
+00_navigation_and_reference:
+  reference_intro:
+      'If a reference location is desired, it can be entered here either by entering coordinates (latitude, longitude) or the location (city, state):'
+  reference_headline:
+    'Your reference location is:'
+  reference_headline_default:
+    'No coordinates / location entered yet'
+
+01_global_temperature_anomalies:
+  content_header:
+    "The Earth is facing one of the most pressing global challenges of the 21st century: 
+    The rise in global surface temperatures.
+    This phenomenon, which is due to climate change, has reached alarming proportions in recent decades 
+    and is having far-reaching environmental, social and economic consequences.
+    The scientific community has repeatedly stated that average global temperatures are rising, 
+    and the evidence is overwhelming. This rise is primarily due to the increased release of 
+    greenhouse gases such as carbon dioxide (CO₂), methane (CH4), and nitrous oxide (N₂O) due to 
+    human activities.
+    
+    The purpose of this dashboard is to give you the opportunity to take a closer look at NASA's surface 
+    temperature anomaly data and Our World In Data's CO₂ emissions data using interactive graphics."
+
+  content_description:
+    "The GISS Surface Temperature Analysis Version 4 (GISTEMP v4), as shown here, is an estimate of global surface 
+    temperature change from monthly mean values. The anomalies are based on NOAA GHCN v4 (Global Historical Climatology 
+    Network Version 4) and ERSST v5 (Extended Reconstructed Sea Surface Temperature Version 5) data."
+
+  figure_description:
+    "With reference to the most recent data, it is clear from the map that the Earth is warming up strongly. 
+    Almost exclusively, higher temperature values have been measured."
+
+  header_figure:
+    'GLOBAL TEMPERATURE ANOMALY'
+
+  row_label_reference:
+    'Temperature anomaly at reference location:'
+
+  row_label_figdata:
+    'Temperature anomaly at clicked location:'
+
+  reference_temp_anomaly_default:
+    'Temperature anomaly at reference location: - no coordinates / location entered yet -'
+
+  figdata_temp_anomaly_default:
+    'Temperature anomaly at clicked location: - no coordinates / location clicked yet -'
+
+
+02_comparison_temperature_anomalies:
+  header_left:
+    'EXTREME TEMPERATURE ANOMALIES'
+
+  header_right:
+    'MEAN TEMPERATURE ANOMALIES'
+
+  content_01:
+    "Independent of location, the extreme values measured in the respective 
+    month of the adjustable year are to be displayed here.
+    It becomes visible that the outer areas are reached more and more often as time progresses.
+    In other words: The world heats up!"
+
+  content_02:
+    "A consideration of the entire given period since 1990 already illustrates the development 
+    shown on the left - namely, that average temperatures are rising steadily."
+
+03_co2_impact_on_temperature:
+  header:
+    'CAUSES OF TEMPERATURE ANOMALIES: CO₂ EMISSIONS'
+
+  content_01:
+    "As has been scientifically proven and advocated for decades, warming is due to increased emissions of greenhouse 
+    gases by humans. Each country's contribution to global mean surface temperature (GMST) rise from its cumulative 
+    emissions of carbon dioxide. The warming effects of each gas are calculated based on cumulative CO₂-equivalent 
+    emissions using the Global Warming Potential (GWP*) approach."
+
+  content_02:
+    "Besides the world map, a so-called treemap visualization is also available. It gives you the possibility to 
+    divide the countries into predefined groups for better comparison. World regions or the division of countries 
+    into income groups are possible options here."
+
+  content_03:
+    "It becomes clear that for many African countries there are no data on the shares in the global temperature 
+    increase due to the CO₂ emissions produced. In contrast, however, the graph shows that the USA is by far 
+    the largest contributor. "
+
+  header_fig_ranking:
+    'TOP causer temperature rise:'
+
+04_global_co2_consumption:
+  header_left:
+    'Development CO₂ consumption despite international agreements'
+
+  header_right:
+    'Comparison between the CO₂ consumption of two different years'
+
+  content_01:
+    "In order to reduce the man-made global temperature increase, international agreements were drawn up as early 
+    as 1997 in Kyoto and 2015 in Paris, which had and have the goal of limiting the global average temperature increase 
+    to 1.5°C by reducing CO₂ emissions. The development of CO₂ consumption per capita (right) and overall (left) is 
+    shown below."
+
+  content_02:
+    "It is also possible to change the preset grouping here."
+
+  content_03:
+    "Furthermore, the right graph visually highlights the prediction that CO₂ consumption per capita may only be 1.5 
+    tons from 2022 onwards in order to have a realistic chance of meeting the targets."

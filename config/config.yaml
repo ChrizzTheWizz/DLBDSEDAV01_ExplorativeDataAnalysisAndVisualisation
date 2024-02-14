@@ -1,0 +1,299 @@
+dash_information:
+  00_style_input_txt:
+    error:
+      border: 1px solid red
+      width: 80%
+    no_error:
+      border: '1px solid #cccd'
+      width: 80%
+  01_countryname_changes:
+    Cote d'Ivoire: Ivory Coast
+    Czechia: Czech Republic
+    Tanzania: United Republic of Tanzania
+    United States: United States of America
+  03_df_co2_columns:
+  - country
+  - iso_code
+  - year
+  - continent
+  - Region
+  - Income group
+  - co2
+  - temperature_change_from_co2
+  03_input_ddl_treemap_options:
+  - disabled: true
+    label: WITH WORLD DIVISION
+    value: header
+  - label: by continents
+    value: all#continent
+  - label: by regions
+    value: all#Region
+  - label: by income
+    value: all#Income group
+  - disabled: true
+    label: ONLY SEPARATE CONTINENT
+    value: header
+  - label: Africa
+    value: Africa#continent
+  - label: America
+    value: America#continent
+  - label: Asia
+    value: Asia#continent
+  - label: Europe
+    value: Europe#continent
+  - label: Oceania
+    value: Oceania#continent
+  - disabled: true
+    label: ONLY SEPARATE REGION
+    value: header
+  - label: Europe & Central Asia
+    value: Europe & Central Asia#Region
+  - label: South Asia
+    value: South Asia#Region
+  - label: East Asia & Pacific
+    value: East Asia & Pacific#Region
+  - label: Middle East & North Africa
+    value: Middle East & North Africa#Region
+  - label: Sub-Saharan Africa
+    value: Sub-Saharan Africa#Region
+  - label: North America
+    value: North America#Region
+  - label: Latin America & Caribbean
+    value: Latin America & Caribbean#Region
+  - disabled: true
+    label: ONLY SEPARATE INCOME GROUP
+    value: header
+  - label: High income
+    value: High income#Income group
+  - label: Upper middle income
+    value: Upper middle income#Income group
+  - label: Lower middle income
+    value: Lower middle income#Income group
+  - label: Low income
+    value: Low income#Income group
+  03_style_input_ddl_treemap:
+    not_visible:
+      display: none
+      opacity: 0
+    visible:
+      display: block
+      opacity: 1
+      transition: opacity 0.5s
+  04_df_co2_columns_filter:
+  - year
+  - country
+  - population
+  - consumption_co2
+  - consumption_co2_per_capita
+  04_df_co2_columns_grouping:
+  - year
+  - country
+  - population
+  - consumption_co2
+  04_input_ddl_grouping_options:
+  - disabled: true
+    label: GROUPS
+    value: header
+  - label: Groups by income
+    value: grouping#Income group
+  - label: Groups by world regions
+    value: grouping#Region
+  - label: Groups by continents
+    value: grouping#continent
+  - disabled: true
+    label: COUNTRIES by INCOME
+    value: header
+  - label: High income
+    value: filter#Income group#High income
+  - label: Upper middle income
+    value: filter#Income group#Upper middle income
+  - label: Lower middle income
+    value: filter#Income group#Lower middle income
+  - label: Low income
+    value: filter#Income group#Low income
+  - disabled: true
+    label: COUNTRIES by REGIONS
+    value: header
+  - label: Europe & Central Asia
+    value: filter#Region#Europe & Central Asia
+  - label: South Asia
+    value: filter#Region#South Asia
+  - label: East Asia & Pacific
+    value: filter#Region#East Asia & Pacific
+  - label: Middle East & North Africa
+    value: filter#Region#Middle East & North Africa
+  - label: Sub-Saharan Africa
+    value: filter#Region#Sub-Saharan Africa
+  - label: North America
+    value: filter#Region#North America
+  - label: Latin America & Caribbean
+    value: filter#Region#Latin America & Caribbean
+  - disabled: true
+    label: COUNTRIES by CONTINENTS
+    value: header
+  - label: Africa
+    value: filter#continent#Africa
+  - label: America
+    value: filter#continent#America
+  - label: Asia
+    value: filter#continent#Asia
+  - label: Europe
+    value: filter#continent#Europe
+  - label: Oceania
+    value: filter#continent#Oceania
+  - disabled: true
+    label: EU / OECD
+    value: header
+  - label: European Union
+    value: filter#EU member#yes
+  - label: OECD
+    value: filter#OECD member#yes
+  - disabled: true
+    label: COUNTRIES by CHOICE
+    value: header
+  - label: customized
+    value: customized
+  04_style_input_chkl_countries:
+    not_visible:
+      border: '2px solid #000000'
+      display: none
+      height: 350px
+      opacity: 0
+      overflowY: scroll
+    visible:
+      border: '2px solid #000000'
+      height: 350px
+      opacity: 1
+      overflowY: scroll
+      transition: opacity 0.5s
+  general:
+    default_color_hex: '#800000'
+    default_padding_value: 21
+    default_table_style:
+      height: auto
+      paddingLeft: 5px
+      paddingTop: 10px
+      textAlign: left'
+      verticalAlign: middle
+      whiteSpace: normal
+    fig_config:
+      displayModeBar: false
+      doubleClick: false
+      scrollZoom: false
+      showTips: false
+data_columns_information:
+- data_column: Anomaly
+  data_description: Monthly average deviation from the reference period 1951-1980
+  data_source_column: GISS Surface Temperature Analysis (GISTEMP v4)
+- data_column: co2
+  data_description: "Annual total production-based emissions of carbon dioxide (CO\u2082\
+    ), excluding land-use change, measured in million tonnes. This is based on territorial\
+    \ emissions, which do not account for emissions embedded in traded goods."
+  data_source_column: CO2 and Greenhouse Gas Emissions (Our World in Data)
+- data_column: consumption_co2
+  data_description: "Annual consumption-based emissions of carbon dioxide (CO\u2082\
+    ), measured in million tonnes. Consumption-based emissions are national or regional\
+    \ emissions which have been adjusted for trade (i.e. territorial/production emissions\
+    \ minus emissions embedded in exports, plus emissions embedded in imports). If\
+    \ a country's consumption-based emissions are higher than its production emissions\
+    \ it is a net importer of carbon dioxide. Data has been converted by Our World\
+    \ in Data from million tonnes of carbon to million tonnes of CO\u2082 using a\
+    \ conversion factor of 3.664."
+  data_source_column: CO2 and Greenhouse Gas Emissions (Our World in Data)
+- data_column: consumption_co2_per_capita
+  data_description: "Annual consumption-based emissions of carbon dioxide (CO\u2082\
+    ), measured in tonnes per person. Consumption-based emissions are national or\
+    \ regional emissions which have been adjusted for trade (i.e. territorial/production\
+    \ emissions minus emissions embedded in exports, plus emissions embedded in imports).\
+    \ If a country's consumption-based emissions are higher than its production emissions\
+    \ it is a net importer of carbon dioxide. Consumption-based CO\u2082 emissions\
+    \ have been converted by Our World in Data from tonnes of carbon to tonnes of\
+    \ CO\u2082 using a conversion factor of 3.664."
+  data_source_column: CO2 and Greenhouse Gas Emissions (Our World in Data)
+- data_column: temperature_change_from_co2
+  data_description: "Change in global mean surface temperature (in \xB0C) caused by\
+    \ CO2 emissions. This measures each country's contribution to global mean surface\
+    \ temperature (GMST) rise from its cumulative emissions of carbon dioxide. The\
+    \ warming effects of each gas are calculated based on cumulative CO2-equivalent\
+    \ emissions using the Global Warming Potential (GWP*) approach.\n"
+  data_source_column: CO2 and Greenhouse Gas Emissions (Our World in Data)
+data_information:
+  co2_data_columns:
+  - country
+  - iso_code
+  - year
+  - population
+  - co2
+  - consumption_co2
+  - consumption_co2_per_capita
+  - temperature_change_from_co2
+  co2_data_drop_cc_combinations:
+    Asia:
+    - Cyprus
+    - Russia
+    - Turkey
+    Europe:
+    - Armenia
+    - Azerbaijan
+    - Georgia
+    - Kazakhstan
+  co2_data_na_columns:
+  - iso_code
+  - population
+  - consumption_co2
+  - temperature_change_from_co2
+  month_number:
+    1: January
+    2: February
+    3: March
+    4: April
+    5: May
+    6: June
+    7: July
+    8: August
+    9: September
+    10: October
+    11: November
+    12: December
+data_sources:
+- data: GISS Surface Temperature Analysis (GISTEMP v4)
+  link_data: '[Temperature Anomaly Data](https://data.giss.nasa.gov/pub/gistemp/gistemp1200_GHCNv4_ERSSTv5.nc.gz)'
+  link_homepage: '[Homepage DATA GISS NASA](https://data.giss.nasa.gov/)'
+  occurrences: Global heatmap / Temperature anomalies
+- data: CO2 and Greenhouse Gas Emissions
+  link_data: '[CO2 and Greenhouse Gas Emissions Data](https://github.com/owid/co2-data/blob/master/owid-co2-data.csv)'
+  link_homepage: '[Homepage Our World in Data](https://ourworldindata.org)'
+  occurrences: CO2 impact / CO2 consumption
+- data: Country shapes (geo data)
+  link_data: '[Country Polygons as GeoJSON](https://datahub.io/core/geo-countries/r/countries.geojson)'
+  link_homepage: '[Homepage DataHub](https://datahub.io)'
+  occurrences: Global heatmap
+- data: CO2 and Greenhouse Gas Emissions
+  link_data: '[CO2 and Greenhouse Gas Emissions Data](https://github.com/owid/co2-data/blob/master/owid-co2-data.csv)'
+  link_homepage: '[Homepage Our World in Data](https://ourworldindata.org)'
+  occurrences: CO2 impact / CO2 consumption
+- data: Country to Continent Mapping
+  link_data: '[country and continent codes list csv](https://gist.github.com/stevewithington/20a69c0b6d2ff846ea5d35e5fc47f26c)'
+  link_homepage: '[GitHub Steve Withington](https://gist.github.com/stevewithington)'
+  occurrences: CO2 impact / CO2 consumption
+- data: World Bank Country and Lending Groups
+  link_data: '[Country and Lending Groups Data](https://datacatalogfiles.worldbank.org/ddh-published/0037712/DR0090755/CLASS.xlsx)'
+  link_homepage: '[Homepage The World Bank](https://www.worldbank.org/en/home)'
+  occurrences: CO2 impact / CO2 consumption
+filepaths:
+  content_data: ./data/content.yaml
+  country_continent_mappings: ./data/country-and-continent-codes-list.csv
+  country_grouping_mappings: ./data/CLASS.xlsx
+  geo_data: ./data/countries.geojson
+  nasa_json_data: ./data/gistemp1200_GHCNv4_ERSSTv5.json
+  nasa_nc_data: ./data/gistemp1200_GHCNv4_ERSSTv5.nc
+  owid_co2_codebook: ./data/owid-co2-codebook.csv
+  owid_co2_data: ./data/owid-co2-data.csv
+further_information:
+- link: '[Homepage ESA Climate Office](https://climate.esa.int/en/)'
+  organization: ESA Climate Office
+- link: '[Homepage Climate Action Tracker](https://climateactiontracker.org)'
+  organization: Climate Action Tracker
+- link: '[Homepage World Meteorological Organization](https://public.wmo.int/en)'
+  organization: World Meteorological Organization
+show_preliminary_info: false
