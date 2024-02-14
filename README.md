@@ -37,10 +37,7 @@ You can download the latest version of Python [here](https://www.python.org/down
 **Data:**
 
 Most of the required data are already in the current repository under "/data/". 
-It is recommended that you use them.  
-
-IMPORTANT:
-The GISS Surface Temperature Analysis (GISTEMP v4) data <br>must be downloaded, as the upload to the repository could not take place due to the data size limitation.:
+It is recommended that you use them.
 
 * [GISS Surface Temperature Analysis (GISTEMP v4)](https://data.giss.nasa.gov/pub/gistemp/gistemp1200_GHCNv4_ERSSTv5.nc.gz)
 * [CO2 and Greenhouse Gas Emissions](https://github.com/owid/co2-data/blob/master/owid-co2-data.csv)
@@ -49,6 +46,8 @@ The GISS Surface Temperature Analysis (GISTEMP v4) data <br>must be downloaded, 
 * [Country to Continent Mapping](https://gist.github.com/stevewithington/20a69c0b6d2ff846ea5d35e5fc47f26c)
 * [World Bank Country and Lending Groups](https://datacatalogfiles.worldbank.org/ddh-published/0037712/DR0090755/CLASS.xlsx)
 
+**IMPORTANT**
+The GISS Surface Temperature Analysis (GISTEMP v4) data must be downloaded, as the upload to the repository could not take place due to the data size limitation.:
 
 ## Installation
 
