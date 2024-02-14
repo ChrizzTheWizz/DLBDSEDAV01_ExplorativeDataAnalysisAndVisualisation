@@ -46,7 +46,7 @@ It is recommended that you use them.
 * [Country to Continent Mapping](https://gist.github.com/stevewithington/20a69c0b6d2ff846ea5d35e5fc47f26c)
 * [World Bank Country and Lending Groups](https://datacatalogfiles.worldbank.org/ddh-published/0037712/DR0090755/CLASS.xlsx)
 
-**IMPORTANT**
+**IMPORTANT**<br>
 The GISS Surface Temperature Analysis (GISTEMP v4) data must be downloaded, as the upload to the repository could not take place due to the data size limitation.:
 
 ## Installation
