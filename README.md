@@ -36,8 +36,11 @@ You can download the latest version of Python [here](https://www.python.org/down
 
 **Data:**
 
-The following files are already in the current repository under "/data/". 
-It is recommended that you use them. However, the current data can also be obtained as follows:
+Most of the required data are already in the current repository under "/data/". 
+It is recommended that you use them.  
+
+IMPORTANT:
+The GISS Surface Temperature Analysis (GISTEMP v4) data <br>must be downloaded, as the upload to the repository could not take place due to the data size limitation.:
 
 * [GISS Surface Temperature Analysis (GISTEMP v4)](https://data.giss.nasa.gov/pub/gistemp/gistemp1200_GHCNv4_ERSSTv5.nc.gz)
 * [CO2 and Greenhouse Gas Emissions](https://github.com/owid/co2-data/blob/master/owid-co2-data.csv)
