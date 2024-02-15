@@ -47,7 +47,7 @@ It is recommended that you use them.
 * [World Bank Country and Lending Groups](https://datacatalogfiles.worldbank.org/ddh-published/0037712/DR0090755/CLASS.xlsx)
 
 **IMPORTANT**<br>
-The GISS Surface Temperature Analysis (GISTEMP v4) data must be downloaded and unpacked to /data/, as the upload to the repository could not take place due to the data size limitation.:
+The GISS Surface Temperature Analysis (GISTEMP v4) data must be downloaded and unpacked to /data/, as the upload to the repository could not take place due to the data size limitation.
 
 ## Installation
 
