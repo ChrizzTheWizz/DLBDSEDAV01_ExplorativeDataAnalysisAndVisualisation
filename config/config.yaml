@@ -296,4 +296,4 @@ further_information:
   organization: Climate Action Tracker
 - link: '[Homepage World Meteorological Organization](https://public.wmo.int/en)'
   organization: World Meteorological Organization
-show_preliminary_info: false
+show_preliminary_info: True
